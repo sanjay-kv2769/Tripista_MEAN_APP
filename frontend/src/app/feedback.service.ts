@@ -7,10 +7,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class FeedbackService {
   constructor( private http:HttpClient  ) { }
   addFeedback(feedback:any){
-    return this.http.post("http://localhost:8080/endpoints/feedback",feedback);
+    return this.http.post("https://tripista-mean-app.herokuapp.com/feedback",feedback);
   }
     listFeedback(){
-    return this.http.get("http://localhost:8080/endpoints/");
+    return this.http.get("https://tripista-mean-app.herokuapp.com/endpoints/");
   }
 
 }

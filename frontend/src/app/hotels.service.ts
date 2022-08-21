@@ -9,23 +9,23 @@ export class HotelsService {
   constructor(private http:HttpClient) { }
 
 addHotel(hotel:any){
-  return this.http.post('http://localhost:8080/endpoint/addhotel',hotel);
+  return this.http.post('https://tripista-mean-app.herokuapp.com/endpoint/addhotel',hotel);
 }
 
 listHotel(){
-  return this.http.get('http://localhost:8080/endpoint/');
+  return this.http.get('https://tripista-mean-app.herokuapp.com/endpoint/');
 }
 
 deleteHotel(id:any){
-  return this.http.delete('http://localhost:8080/endpoint/deletehotel/'+id);
+  return this.http.delete('https://tripista-mean-app.herokuapp.com/endpoint/deletehotel/'+id);
 }
 
 singleHotel(id:any){
-  return this.http.get('http://localhost:8080/endpoint/hotel/'+id);
+  return this.http.get('https://tripista-mean-app.herokuapp.com/endpoint/hotel/'+id);
 }
 
 updateHotel(id:any,hotel:any){
-  return this.http.put('http://localhost:8080/endpoint/updatehotel/'+id,hotel);
+  return this.http.put('https://tripista-mean-app.herokuapp.com/endpoint/updatehotel/'+id,hotel);
 
 }
 

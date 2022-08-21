@@ -1,0 +1,182 @@
+
+    <section class="vh-100" style="background-color: rgb(255, 255, 255);">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-14 col-xl-13">
+    
+    
+                <!-- landing page -->
+                <section class="pt-2">
+                    <div class="hero-image" style="background-image: url('https://img.onmanorama.com/content/dam/mm/en/travel/getting-about-kerala/pathanamthitta/images/2019/9/13/forest-gavi.jpg.transform/schema-16x9/image.jpg')">;
+                        <div class="hero-text image-txt">
+                            <h3>Explore</h3>
+                            <h1 class="underline-red">Pathanamthitta</h1>
+                        </div>
+                    </div>
+            
+            
+                </section>
+                </div>
+                </div>
+                </div>
+              </section>
+    
+                <!-- about US  -->
+            
+                <section class="container pt-2 col-md-8">
+            
+            
+                    <section class="pt-1  about-us  row">
+                        <div class="col col-12 col-lg-6 gallery">
+                            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                                <div ngxSlickItem *ngFor="let image of images" class="slide">
+                                    <img [src]='image' />
+                                </div>
+                            </ngx-slick-carousel> <!-- competitions-carousel : ends -->
+                        </div>
+                        <div class=" details  p-4   col-12 col-lg-6 ">
+                            <h2>About Pathanamthitta</h2>
+                            <p>More than fifty per cent of the total area of this district is covered by forests. Pathanamthitta is one of the most important pilgrim centers in Kerala and there are many Temples and Churchs. Maramon, the place where the world famous Maramon convention is conducted, is in this district. Sabarimala,located at an altitude of 3790 feet, is one of the most famous pilgrim centers in India. The world famous Aranmula mirrors comes from this district.</p>
+                        </div>
+            
+            
+                    </section>
+                    <!-- about us ends -->
+    
+    
+    <div class="wrapper-grey padded">
+      <div class="container row">
+    
+    <!-- hovering cards starts-->
+    <div class="cardsp">
+      <h2 class="hdtxt text-center" >Top Destinations</h2>
+      <hr style="color: grey;">
+      <br><br><br><br>
+      <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardspimg imgContainer'>
+                <img src='/assets/img/gallery/gavi12.JPG'>
+                <h2>Gavi</h2>
+            </div>
+            <div class="content">
+                <h2></h2>
+                <p>One of the most beautiful places in India, Gavi is a small village tucked between tea estates and wide and dense forests. 
+                  A unique project in itself, the place is a model of eco-tourism site bringing to the world its spellbinding abundance in flora and fauna. </p>
+            </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='/assets/img/gallery/aranm12.jpg'>
+                <h2>Aranmula</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>Aranmula is a place mainly known for its expert craftsmanship and snake boat race organized on the final day of Onam Festival. 
+                  The most renowned art of metal mirror of Aranmula Kannadi has its roots originated from this place. </p>
+              </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='/assets/img/gallery/sabar12.jpg'>
+                <h2>Sabarimala</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>More than 30 million pilgrims visit the temple in Sabarimala annually, making it the largest in India and second largest in the world, after Hajj Pilgrimage of Mecca in Saudi Arabia. 
+                  Located inside the Periyar Tiger Reserve, in the Pathanamthitta district of Kerala, Sabarimala is a temple town on the bank of the River Pampa.
+                   Named after the mythological character.</p>
+              </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='https://www.holidify.com/images/compressed/6082.jpg'>
+                <h2>Perunthenaruvi Waterfall</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>A natural waterfall with captivating surroundings is situated on the banks of the River Pamba. The fall is 60 to 100 ft deep which pours down on a rocky bed. The place is a favourite picnic spot among locals as well as tourists.
+
+                </p>
+              </div>
+        </div>
+    </div>
+    </div>
+    <hr style="color: grey;">
+    <!-- hovering cards ends -->
+    
+    
+     <!-- hotels starts ----------->
+     <div style="  text-align: center;">
+      <h1 class=""><u>Hotels</u></h1>
+    </div>
+    <section class="container pt-2 container-c">
+      <div class="" >
+      </div>
+      <br>
+      <ng-container *ngFor="let hotel of hotels">
+        <ng-container class="" *ngIf="hotel.hotelAddress == 'Pathanamthitta'">
+          <div class="card" [style.background]="'url( '+ hotel.hotelImageUrl +' )'"
+            style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)) ; width:100% ; height:40vh ;">
+            <div style="color: white; font-weight:600" class="card-category">{{hotel.hotelName}}</div>
+            <div class="card-description">
+              <h2 style="color: white; font-weight:600">{{hotel.hotelAddress}}</h2>
+              <h4 style="color: rgb(236, 215, 215);">₹{{hotel.hotelPrice}}</h4>
+              <p style="color: rgba(236, 215, 215, 0.727); font-size: 20px;">{{hotel.hotelContact}}, <a>{{hotel.hotelWebsite}}</a></p>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </section>
+  
+
+
+    <!-- hotels end ----------->
+    
+
+
+<!-- guides of alappuzha -->
+<br><br><br>
+<!-- guides of alappuzha end-->
+
+
+
+
+    </div>
+    </div>
+
+    <br><br>
+    <!-- Guides of tripsita starts -->
+
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-12 col-sm-8 col-lg-6">
+  <!-- <div class="col-4"> -->
+    <!-- Section Heading-->
+    <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+      <h1><u> Guides <span> of Pathanamthitta</span></u></h1>
+      <p></p><br><br>
+      <div class="line"></div>
+    </div>
+  </div>
+</div>
+<div class="row guide-grid">
+  <!-- Single Advisor-->
+  <ng-container class="guide-container"  *ngFor="let guide of guides">
+    <ng-container *ngIf="guide.district == 'Pathanamthitta'">
+      <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+      <!-- Team Thumb-->
+        <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt=""> 
+      <!-- Team Details-->
+          <div class="single_advisor_details_info">
+            <h6><strong>{{guide.first_name}} {{guide.last_name}}</strong></h6>
+            <p class="designation">{{guide.dob}}</p>
+            <p class="designation">{{guide.district}}</p>
+            <p class="designation">{{guide.gender}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
+
+<!-- Guides of tripsita starts ends -->

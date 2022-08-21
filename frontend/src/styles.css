@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body{
+
+    font-family: "Poppins " !important;
+}
+head{
+    
+    font-family: "Poppins " !important;
+}
+section{
+    font-family: "Poppins " !important;
+    font-size: 20px;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: "Poppins " !important;
+    
+}
+a {
+    font-family: "Poppins " !important;
+}

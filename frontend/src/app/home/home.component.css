@@ -1,0 +1,144 @@
+.blockquote-custom {
+    position: relative;
+    font-size: 1.1rem;
+    }
+
+.blockquote-custom-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -40px;
+        left: 19px;
+        }    
+.review{
+    background-color: rgb(255, 255, 255);
+}   
+.card{
+    border-radius: 25px;
+    
+
+
+}
+
+/* card body       */
+.cb{
+    max-height: fit-content;
+   
+}
+
+
+
+.slide-container .blockquote-footer{
+    position: absolute;
+    /* position: static; */
+    z-index: 20;
+    bottom: 0;
+   
+
+}
+
+
+.slide-container{
+    position: relative;
+    height: 35vh;
+}
+.slide-container span{
+    font-size: 40px;
+    color: blue;
+}
+/* span end  */
+
+
+
+.blockquote-custom {
+    position: relative;
+    font-size: 1.1rem;
+    }
+
+.blockquote-custom-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -40px;
+        left: 19px;
+        }    
+.review{
+    background-color: rgb(255, 255, 255);
+}   
+.card{
+    border-radius: 25px;
+}
+/* card body       */
+.cb{
+    max-height: fit-content;
+}
+.slide-container .blockquote-footer{
+    position: absolute;
+    /* position: static; */
+    z-index: 20;
+    bottom: 0;
+}
+.slide-container{
+    position: relative;
+    height: 35vh;
+}
+.slide-container span{
+    font-size: 40px;
+    color: blue;
+}
+/* span end  */
+#guide-bg img{
+    background-image:url('/assets/img/icons/GuideFlag.png') ;
+     position: absolute;
+     width: auto;
+     height: 22vh;
+     z-index: 10;
+     bottom: 10px;
+     align-content: center;
+
+    }
+ @media only screen and (max-width: 1000px) {
+        #guide-bg img{
+                height: 20vh;
+        }
+      }    
+.custom-shape-divider-bottom-1660745182 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-bottom-1660745182 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 130px;
+}
+.custom-shape-divider-bottom-1660745182 .shape-fill {
+    fill: #6BC584;
+}
+
+/* For tablet devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1660745182 svg {
+        width: calc(132% + 1.3px);
+        height: 149px;
+    }
+}
+/* For mobile devices */
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1660745182 svg {
+        width: calc(140% + 1.3px);
+        height: 81px;
+    }
+}

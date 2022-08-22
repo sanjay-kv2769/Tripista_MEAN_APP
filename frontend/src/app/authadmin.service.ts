@@ -8,7 +8,7 @@ export class AuthadminService {
 
   loginAdmin(user:any)
   {
-    return this.http.post<any>("https://tripista-mean-app.herokuapp.com/admin",user)
+    return this.http.post<any>("http://localhost:8080/admin",user)
 
   }
   constructor(private http:HttpClient) { }

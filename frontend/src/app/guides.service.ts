@@ -8,10 +8,10 @@ export class GuidesService {
   constructor(private http:HttpClient) { }
 
   addGuide(guide:any){
-    return this.http.post('https://tripista-mean-app.herokuapp.com/endpointss/add-guide', guide)
+    return this.http.post('http://localhost:8080/endpointss/add-guide', guide)
   }
 
   listGuide(){
-    return this.http.get('https://tripista-mean-app.herokuapp.com/endpointss/')
+    return this.http.get('http://localhost:8080/endpointss/')
   }
 }
